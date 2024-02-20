@@ -16,8 +16,8 @@ function calculateMoney(ticket) {
 
 
 //const totalTicket=1;
-const totalSaving= calculateMoney(1);
-console.log(totalSaving)
+// const totalSaving= calculateMoney(1);
+// console.log(totalSaving)
 
 
 
@@ -51,10 +51,10 @@ function checkName(name) {
 
 
 }
-/*const nameis = "jhankar"
-const check = checkName(nameis)
-console.log(check)
-*/
+
+// const check = checkName("jhankar")
+// console.log(check)
+
 
 
 
