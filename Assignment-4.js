@@ -4,8 +4,8 @@ function calculateMoney(ticket) {
 
     const msg = "Give me a positive number";
 
-    if (totalTicket >= 0) {
-        const saving = (totalTicket * 120) - (500 + (8 * 50));
+    if (ticket >= 0) {
+        const saving = (ticket * 120) - (500 + (8 * 50));
         return saving;
     }
     else {
@@ -14,11 +14,11 @@ function calculateMoney(ticket) {
 
 }
 
-/*
-const totalTicket=1055;
-const totalSaving= calculateMoney(totalTicket);
+
+//const totalTicket=1;
+const totalSaving= calculateMoney(1);
 console.log(totalSaving)
-*/
+
 
 
 
@@ -28,16 +28,16 @@ function checkName(name) {
     const bad = "Bad Name";
     const invalid = "Invalid"
 
-    if (typeof nameis === "number") {
+    if (typeof name === "number") {
         return invalid
 
     }
-    else if (typeof nameis !== "number" && typeof nameis !== "string") {
+    else if (typeof name !== "number" && typeof name !== "string") {
         return invalid
     }
 
     else {
-        const names = nameis.toLowerCase()
+        const names = name.toLowerCase()
         let nameLength = names.length;
         let lastChar = names.charAt(nameLength - 1)
         if (lastChar === "a" || lastChar === "e" || lastChar === "i" || lastChar === "o" || lastChar === "u" || lastChar === "y" || lastChar === "w") {
